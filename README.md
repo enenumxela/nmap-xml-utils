@@ -1,4 +1,4 @@
-# nmap-xml-utilities
+# nmap-xml-utils
 
 Utilities to process nmap XML output.
 
@@ -7,24 +7,24 @@ Utilities to process nmap XML output.
 * [Merge nmap xml files](#merge-nmap-xml-files)
 * [Parse nmap xml file](#parse-nmap-xml-file)
 
-### [Merge nmap xml files](https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/merge-nmap-xml.py)
+### [Merge nmap xml files](https://raw.githubusercontent.com/enenumxela/nmap-xml-utils/main/nmap-xml-merge.py)
 
 Merge Multiple nmap xml output files into a single xml file.
 
 #### Installation
 
 ```bash
-curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/merge-nmap-xml.py > ~/.local/bin/merge-nmap-xml.py && chmod u+x ~/.local/bin/merge-nmap-xml.py
+curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utils/main/nmap-xml-merge.py > ~/.local/bin/nmap-xml-merge.py && chmod u+x ~/.local/bin/nmap-xml-merge.py
 ```
 
 #### Uage
 
 ```bash
-merge-nmap-xml.py -h
+nmap-xml-merge.py -h
 ```
 
 ```text
-usage: merge-nmap-xml [-h] [-f FILE] [-d DIR] [-q]
+usage: nmap-xml-merge [-h] [-f FILE] [-d DIR] [-q]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -33,24 +33,24 @@ optional arguments:
   -q, --quiet           don't print status messages to stdout
 ```
 
-### [Parse nmap xml file](https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/parse-nmap-xml.py)
+### [Parse nmap xml file](https://raw.githubusercontent.com/enenumxela/nmap-xml-utils/main/nmap-xml-parse.py)
 
 Parse nmap xml output file to extract bits of information.
 
 #### Installation
 
 ```bash
-curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utilities/main/parse-nmap-xml.py > ~/.local/bin/parse-nmap-xml.py && chmod u+x ~/.local/bin/parse-nmap-xml.py
+curl -sL https://raw.githubusercontent.com/enenumxela/nmap-xml-utils/main/nmap-xml-parse.py > ~/.local/bin/nmap-xml-parse.py && chmod u+x ~/.local/bin/nmap-xml-parse.py
 ```
 
 #### Uage
 
 ```bash
-parse-nmap-xml.py -h
+nmap-xml-parse.py -h
 ```
 
 ```text
-usage: parse-nmap-xml [-h] [-ips] [-ports] [-service SERVICE] [-service-prefix PREFIX] [-separator SEPARATOR] FILE
+usage: nmap-xml-parse [-h] [-ips] [-ports] [-service SERVICE] [-service-prefix PREFIX] [-separator SEPARATOR] FILE
 
 positional arguments:
   FILE                  Nmap XML output file
